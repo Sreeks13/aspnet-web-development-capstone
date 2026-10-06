@@ -1,0 +1,13 @@
+@model Tool
+
+<h1>Edit Tool</h1>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="Id" />
+
+    <div asp-validation-summary="ModelOnly"></div>
+
+    @await Html.PartialAsync("_ToolFields", Model)
+
+    <button type="submit">Save</button>
+</form>

@@ -1,0 +1,24 @@
+@model Tool
+
+<div>
+    <label asp-for="Name"></label>
+    <input asp-for="Name" />
+    <span asp-validation-for="Name"></span>
+</div>
+
+<div>
+    <label asp-for="Category"></label>
+    <input asp-for="Category" />
+    <span asp-validation-for="Category"></span>
+</div>
+
+<div>
+    <label asp-for="DailyRate"></label>
+    <input asp-for="DailyRate" />
+    <span asp-validation-for="DailyRate"></span>
+</div>
+
+<div>
+    <label asp-for="IsAvailable"></label>
+    <input asp-for="IsAvailable" />
+</div>

@@ -1,0 +1,11 @@
+@model Tool
+
+<h1>Create Tool</h1>
+
+<form asp-action="Create" method="post">
+    <div asp-validation-summary="ModelOnly"></div>
+
+    @await Html.PartialAsync("_ToolFields", Model)
+
+    <button type="submit">Create</button>
+</form>

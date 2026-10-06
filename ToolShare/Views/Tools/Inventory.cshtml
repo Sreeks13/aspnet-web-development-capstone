@@ -1,0 +1,25 @@
+@model IEnumerable<Tool>
+
+<h1>Inventory</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Daily Rate</th>
+            <th>Available</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var tool in Model)
+    {
+        <tr>
+            <td>@tool.Name</td>
+            <td>@tool.Category</td>
+            <td>@tool.DailyRate</td>
+            <td>@tool.IsAvailable</td>
+        </tr>
+    }
+    </tbody>
+</table>

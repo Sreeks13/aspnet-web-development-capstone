@@ -1,0 +1,12 @@
+@model IEnumerable<Tool>
+
+<h1>Tool Catalog</h1>
+
+<p>
+    <a asp-action="Create">Create Tool</a>
+</p>
+
+@foreach (var tool in Model)
+{
+    @await Html.PartialAsync("_ToolCard", tool)
+}

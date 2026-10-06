@@ -1,0 +1,11 @@
+@model Tool
+
+<div class="tool-card">
+    <h3>@Model.Name</h3>
+    <p>Category: @Model.Category</p>
+    <p>Daily Rate: @Model.DailyRate</p>
+    <p>Available: @Model.IsAvailable</p>
+    <a asp-controller="Tools"
+       asp-action="Details"
+       asp-route-id="@Model.Id">Details</a>
+</div>
